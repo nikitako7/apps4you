@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/fav.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Apps4You</title>
+</head>
+
+<body>
+    <section class="intro">
+        <div class="container">
+            <header>
+                <nav class="navigation">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo: Apps4You" class="logo" />
+                    </a>
+                    <ul class="navigation__list">
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#clients">CLIENTS</a></li>
+                        <li><a href="#technology">TECHNOLOGY STACK</a></li>
+                    </ul>
+                    <button class="button navigation__button" onclick="togglePopUp()">Contact us</button>
+                </nav>
+            </header>
+            <div class="hero">
+                <h1 class="hero__title">IT solutions for business development.</h1>
+                <p class="hero-p">Software Development</p>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <section class="contact__us">
+                            <div class="container">
+                                <div class="form-container">
+                                    <div class="close-btn" onclick="togglePopUp()">&times</div>
+                                    <div class="contact__content">
+                                        <div class="contact__content--left">
+                                            <h4 class="contact__title">Write Us</h4>
+                                            <form id="tg">
+                                                <div class="form-group">
+                                                    <label class="form-label">Name</label>
+                                                    <input type="text" name="name" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" name="email" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Telegram/Skype</label>
+                                                    <input type="text" name="telegram" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-label">Comments</label>
+                                                    <textarea name="comments" id="comments"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn contact__us--btn">Send</button>
+                                            </form>
+                                        </div>
+                                        <div class="contact__content--right">
+                                            <h4 class="contact__info">Contact Information</h4>
+                                            <p class="contact__info--text">We are open for any suggestion or just to
+                                                have a chat</p>
+                                            <div class="contact__testimonials">
+                                                <div class="contact__testimonial">
+                                                    <img src="img/placeholder.png" alt="">
+                                                    <p>Address: 198 West 21th Street, Suite 721
+                                                        New York NY 10016</p>
+                                                </div>
+                                                <div class="contact__testimonial">
+                                                    <img src="img/phone-call.png" alt="">
+                                                    <p>Phone: + 1235 2355 98</p>
+                                                </div>
+                                                <div class="contact__testimonial">
+                                                    <img src="img/gmail.png" alt="mail">
+                                                    <p>Email: info@yoursite.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <button class="button hero__button" onclick="togglePopUp()">Fill out form</button>
+                <img src="img/ipad.png" alt="" class="ipad">
+            </div>
+        </div>
+    </section>
+    <section class="technology" id="about">
+        <div class="container">
+            <div class="technology__content">
+                <div class="technology__content--left">
+                    <h2 class="technology__title">Reliable technology partner for your business.</h2>
+                </div>
+                <div class="technology__content--right">
+                    <div class="technology__item">
+                        <div class="technology__item--left">
+                            <h4>DEEP EXPERTISE</h4>
+                            <p>We've been working with clients from all over the world for more than 5 years. During
+                                this period we've completed hundreds of outstanding projects that have helped our
+                                clients achieve their business goals.</p>
+                        </div>
+                        <div class="technology__item--right">
+                            <h4>200+</h4>
+                            <p>successful projects</p>
+                        </div>
+                    </div>
+                    <div class="technology__item">
+                        <div class="technology__item--left">
+                            <h4>EXPERTS IN DIFFERENT FIELDS</h4>
+                            <p>Apps4You works with companies around the world, using best practices and IT trends</p>
+                        </div>
+                        <div class="technology__item--right">
+                            <h4>5</h4>
+                            <p>years in business</p>
+                        </div>
+                    </div>
+                    <div class="technology__item">
+                        <div class="technology__item--left">
+                            <h4>CUSTOMER RECOGNITION</h4>
+                            <p>We've gained recognition of companies from both CIS and Europe, turning most of our
+                                clients into regular customers.</p>
+                        </div>
+                        <div class="technology__item--right">
+                            <h4>50+</h4>
+                            <p>regular customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="project__content">
+                <h3 class="project__title">Projects that we take on</h3>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/ios.png" alt="">
+                                <h4>iOS apps</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/android.png" alt="">
+                                <h4>Android apps</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/telegram-bots.png" alt="">
+                                <h4>Telegram bots</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/gaming.png" alt="">
+                                <h4>Hypercasual games</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/traffic.png" alt="">
+                                <h4>Traffic arbitrage</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/marketing.png" alt="">
+                                <h4>Marketing solutions</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="clients__content">
+                <h3 class="clients__title">Leading companies trust Apps4You</h3>
+                <div class="clients__wrapper">
+                    <div class="clients__card">
+                        <img src="img/mostbetpartners.png" alt="" id="mostbet">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/gg.svg" alt="" id="gg">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/liga-stavok.png" alt="" id="ligastavok">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/gamblingpro.png" alt="" id="gambling">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/offerum.png" alt="" id="offerum">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/alfaleads.png" alt="" id="alfaleads">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/applink.svg" alt="" id="applink">
+                    </div>
+                    <div class="clients__card">
+                        <img src="img/whitebit.png" alt="" id="whitebit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stack" id="technology">
+        <div class="container">
+            <div class="stack__content">
+                <h3 class="stack__title">Apps4You technology stack</h3>
+                <p class="stack__subtitle">Our developers use the latest technologies, frameworks and components to
+                    create solutions that combine powerful technical support with an easy-to-use modern design.</p>
+                <div class="w3-bar w3-black tabs">
+                    <button class="w3-bar-item w3-button btn tablink w3-red" onclick="openTab(event, 'Popular')">Mobile
+                        development</button>
+                    <button class="w3-bar-item w3-button btn tablink" onclick="openTab(event, 'Mobile')">Telegram
+                        bots</button>
+                    <button class="w3-bar-item w3-button btn tablink"
+                        onclick="openTab(event, 'Back-end')">Others</button>
+                </div>
+                <div id="Popular" class="stack-slider-wrapper">
+                    <div class="swiper stack-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/java.png" alt="">
+                                    <h4>Java</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide stack-card">
+                                <div class="slide">
+                                    <img src="img/flutter.png" alt="">
+                                    <h4>Flutter</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide stack-card">
+                                <div class="slide">
+                                    <img src="img/kotlin.png" alt="">
+                                    <h4>Kotlin</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/cordova.png" alt="">
+                                    <h4>Cordova</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/swift.png" alt="">
+                                    <h4>Swift</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/unity.png" alt="">
+                                    <h4>Unity</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div id="Mobile" class="stack-slider-wrapper" style="display:none">
+                    <div class="swiper stack-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/python.png" alt="">
+                                    <h4>Python</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide stack-card">
+                                <div class="slide">
+                                    <img src="img/ruby.png" alt="">
+                                    <h4>Ruby</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide stack-card">
+                                <div class="slide">
+                                    <img src="img/dotnet.png" alt="">
+                                    <h4>.NET</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/nodejs.png" alt="">
+                                    <h4>NodeJS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div id="Back-end" class="stack-slider-wrapper" style="display:none">
+                    <div class="swiper stack-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide stack-card">
+                                <div class="slide">
+                                    <img src="img/react.png" alt="">
+                                    <h4>React</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/nodejs.png" alt="">
+                                    <h4>NodeJS</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide stack-card">
+                                    <img src="img/nextjs.png" alt="">
+                                    <h4>NextJS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact__us">
+        <div class="container">
+            <div class="form-container">
+                <h3 class="stack__title">Contact us Form</h3>
+                <div class="contact__content">
+                    <div class="contact__content--left">
+                        <h4 class="contact__title">Write Us</h4>
+                        <form id="tg">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Telegram/Skype</label>
+                                <input type="text" name="telegram" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Comments</label>
+                                <textarea name="comments" id="comments"></textarea>
+                            </div>
+                            <button type="submit" class="btn contact__us--btn">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact__content--right">
+                        <h4 class="contact__info">Contact Information</h4>
+                        <p class="contact__info--text">We are open for any suggestion or just to have a chat</p>
+                        <div class="contact__testimonials">
+                            <div class="contact__testimonial">
+                                <img src="img/placeholder.png" alt="">
+                                <p>Address: 198 West 21th Street, Suite 721
+                                    New York NY 10016</p>
+                            </div>
+                            <div class="contact__testimonial">
+                                <img src="img/phone-call.png" alt="">
+                                <p>Phone: + 1235 2355 98</p>
+                            </div>
+                            <div class="contact__testimonial">
+                                <img src="img/gmail.png" alt="mail">
+                                <p>Email: info@yoursite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>© 2007-2022 Apps4You. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            freeMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var stackSlider = new Swiper(".stack-slider", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: false,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        const TOKEN = "5725435206:AAEx0u4d3Xn56deAx2co5rQCubn-LCuEV6I";
+        const CHAT_ID = "-1001807048709";
+        const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+        document.getElementById('tg').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let message = `<b>Заявка с Apps4You</b>\n`;
+            message += `<b>Sender:</b> <i>${this.name.value}</i>\n`;
+            message += `<b>Email:</b> <i>${this.email.value}</i>\n`;
+            message += `<b>Telegram/Skype:</b> <i>${this.telegram.value}</i>\n`;
+            message += `<b>Comments:</b> <i>${this.comments.value}</i>`;
+
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            }).then((res) => {
+                this.name.value = '';
+                this.email.value = '';
+                this.telegram.value = '';
+                this.comments.value = '';
+            }).catch((err) => {
+                console.error(err);
+            })
+        })
+    </script>
+</body>
+
+</html>
