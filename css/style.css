@@ -24,7 +24,8 @@ section {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1130px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -126,13 +127,12 @@ section {
 .technology__content {
     border: 2px solid #c8080c;
     display: flex;
-    flex-basis: 50%;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .technology__content--left {
     display: flex;
-    width: 50%;
+    max-width: 50%;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -140,7 +140,6 @@ section {
 
 .technology__content--right {
     display: flex;
-    width: 50%;
     flex-direction: column;
     align-items: center;
     background-color: #fafafa;
@@ -303,9 +302,7 @@ section {
 
 .clients__card {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
     align-items: center;
     width: 240px;
     height: 240px;
@@ -548,8 +545,237 @@ footer p {
     transition: all 0.3s ease-in-out;
     transform: translate(-50%, -50%) scale(1);
     z-index: 2;
+    width: 1000px;
 }
 
 .popup.active .overlay {
     width: 100vw;
+}
+
+@media (max-width: 1080px) {
+  .navigation__list {
+    display: none;
+  }
+
+  .navigation__button {
+    margin-right: 40px;
+    margin-top: 15px;
+    padding: 25px 60px;
+    font-size: 18px;
+  }
+  
+  .ipad {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero__title {
+    margin-top: 45px;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .popup.active .content {
+    width: 730px;
+  }
+
+  .technology__content {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .technology__content--left {
+    text-align: center;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .technology__content--right {
+    padding: 60px 60px 20px 60px;
+    max-width: 100%;
+  }
+
+  .technology__item {
+    justify-content: space-between;
+  }
+
+  .technology__item--left {
+    max-width: 600px;
+  } 
+
+  .technology__item--right {
+    min-width: 138px;
+  }
+
+  .technology__item--left p {
+    font-size: 18px;
+  }
+
+  .technology__item--left h4 {
+    font-size: 20px;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__button {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+
+  .navigation__button {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .hero__title {
+    font-size: 10vw;
+    margin-top: 25px;
+  }
+
+  .hero-p {
+    font-size: 5vw;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .technology__item {
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 40px;
+  }
+
+  .technology__item--right {
+    align-items: center;
+  }
+
+  .technology__item--left p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .technology__item--left h4 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .technology__content--right {
+    padding: 30px 30px 0 30px;
+  }
+
+  .technology__item--right h4 {
+    font-size: 45px;
+  }
+
+  .technology__item--right p {
+    font-size: 20px;
+  }
+
+  .stack__content {
+    padding: 0 20px;
+  }
+
+  .stack__subtitle {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 10px;
+  }
+
+  .w3-button {
+    width: 192px;
+  }
+
+  .contact__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__content--left, .contact__content--right {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .technology__title {
+    font-size: 32px;
+    padding: 0;
+  }
+
+  .project__title {
+    font-size: 38px;
+    margin: 30px 15px;
+  }
+
+  .clients__card {
+    width: 180px;
+    height: 180px;
+  }
+
+  #mostbet {
+    max-width: 172px;
+  }
+
+  #ligastavok {
+    max-width: 165px;
+  }
+
+  #gg {
+    max-width: 142px;
+  }
+
+  #gambling {
+    max-width: 225px;
+  }
+
+  #offerum {
+    max-width: 188px;
+  }
+
+  #alfaleads {
+    max-width: 128px;
+  }
+
+  #applink {
+    max-width: 90px;
+  }
+
+  #whitebit {
+    max-width: 98px;
+  }
+
+  .clients__title {
+    font-size: 38px;
+    margin: 20px 10px 40px;
+  }
+
+  .clients__card:nth-child(2n + 1) {
+    display: none;
+  }
+
+  .w3-button {
+    width: 161px;
+    padding: 5px 2px;
+  }
+
+  .form-container {
+    padding-bottom: 0;
+  }
 }

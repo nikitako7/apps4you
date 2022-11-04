@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Apps4You</title>
 </head>
 
@@ -45,7 +46,7 @@
                                     <div class="contact__content">
                                         <div class="contact__content--left">
                                             <h4 class="contact__title">Write Us</h4>
-                                            <form id="tg">
+                                            <form class="tg">
                                                 <div class="form-group">
                                                     <label class="form-label">Name</label>
                                                     <input type="text" name="name" class="form-control">
@@ -91,7 +92,7 @@
                         </section>
                     </div>
                 </div>
-                <button class="button hero__button" onclick="togglePopUp()">Fill out form</button>
+                <a href="#contact"><button class="button hero__button">Fill out form</button></a>
                 <img src="img/ipad.png" alt="" class="ipad">
             </div>
         </div>
@@ -100,38 +101,38 @@
         <div class="container">
             <div class="technology__content">
                 <div class="technology__content--left">
-                    <h2 class="technology__title">Reliable technology partner for your business.</h2>
+                    <h2 class="technology__title" data-aos="fade-up">Reliable technology partner for your business.</h2>
                 </div>
                 <div class="technology__content--right">
                     <div class="technology__item">
-                        <div class="technology__item--left">
+                        <div class="technology__item--left" data-aos="fade-up">
                             <h4>DEEP EXPERTISE</h4>
                             <p>We've been working with clients from all over the world for more than 5 years. During
                                 this period we've completed hundreds of outstanding projects that have helped our
                                 clients achieve their business goals.</p>
                         </div>
-                        <div class="technology__item--right">
+                        <div class="technology__item--right" data-aos="fade-up">
                             <h4>200+</h4>
                             <p>successful projects</p>
                         </div>
                     </div>
                     <div class="technology__item">
-                        <div class="technology__item--left">
+                        <div class="technology__item--left" data-aos="fade-up">
                             <h4>EXPERTS IN DIFFERENT FIELDS</h4>
                             <p>Apps4You works with companies around the world, using best practices and IT trends</p>
                         </div>
-                        <div class="technology__item--right">
+                        <div class="technology__item--right" data-aos="fade-up">
                             <h4>5</h4>
                             <p>years in business</p>
                         </div>
                     </div>
                     <div class="technology__item">
-                        <div class="technology__item--left">
+                        <div class="technology__item--left" data-aos="fade-up">
                             <h4>CUSTOMER RECOGNITION</h4>
                             <p>We've gained recognition of companies from both CIS and Europe, turning most of our
                                 clients into regular customers.</p>
                         </div>
-                        <div class="technology__item--right">
+                        <div class="technology__item--right" data-aos="fade-up">
                             <h4>50+</h4>
                             <p>regular customers</p>
                         </div>
@@ -140,7 +141,7 @@
             </div>
         </div>
     </section>
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
         <div class="container">
             <div class="project__content">
                 <h3 class="project__title">Projects that we take on</h3>
@@ -195,35 +196,43 @@
             <div class="clients__content">
                 <h3 class="clients__title">Leading companies trust Apps4You</h3>
                 <div class="clients__wrapper">
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">
                         <img src="img/mostbetpartners.png" alt="" id="mostbet">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/gg.svg" alt="" id="gg">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/liga-stavok.png" alt="" id="ligastavok">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/gamblingpro.png" alt="" id="gambling">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/offerum.png" alt="" id="offerum">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/alfaleads.png" alt="" id="alfaleads">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/applink.svg" alt="" id="applink">
                     </div>
-                    <div class="clients__card">
+                    <div class="clients__card" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1800">>
                         <img src="img/whitebit.png" alt="" id="whitebit">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="stack" id="technology">
+    <section class="stack" id="technology" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
         <div class="container">
             <div class="stack__content">
                 <h3 class="stack__title">Apps4You technology stack</h3>
@@ -347,14 +356,14 @@
             </div>
         </div>
     </section>
-    <section class="contact__us">
+    <section class="contact__us" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="container">
-            <div class="form-container">
+            <div class="form-container" id="contact">
                 <h3 class="stack__title">Contact us Form</h3>
                 <div class="contact__content">
                     <div class="contact__content--left">
                         <h4 class="contact__title">Write Us</h4>
-                        <form id="tg">
+                        <form class="tg">
                             <div class="form-group">
                                 <label class="form-label">Name</label>
                                 <input type="text" name="name" class="form-control">
@@ -403,6 +412,7 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -418,11 +428,24 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                1080: {
+                    slidesPerView: 4,
+                }
+            }
         });
         var stackSlider = new Swiper(".stack-slider", {
             slidesPerView: 4,
             spaceBetween: 30,
-            slidesPerGroup: 3,
             loop: false,
             loopFillGroupWithBlank: false,
             pagination: {
@@ -433,34 +456,52 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                1080: {
+                    slidesPerView: 4,
+                }
+            }
         });
 
         const TOKEN = "5725435206:AAEx0u4d3Xn56deAx2co5rQCubn-LCuEV6I";
         const CHAT_ID = "-1001807048709";
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-        document.getElementById('tg').addEventListener('submit', function (e) {
-            e.preventDefault();
+        const forms = document.getElementsByClassName("tg");
+        Array.from(forms).forEach(function (el) {
+            el.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            let message = `<b>Заявка с Apps4You</b>\n`;
-            message += `<b>Sender:</b> <i>${this.name.value}</i>\n`;
-            message += `<b>Email:</b> <i>${this.email.value}</i>\n`;
-            message += `<b>Telegram/Skype:</b> <i>${this.telegram.value}</i>\n`;
-            message += `<b>Comments:</b> <i>${this.comments.value}</i>`;
+                let message = `<b>Заявка с Apps4You</b>\n`;
+                message += `<b>Sender:</b> <i>${this.name.value}</i>\n`;
+                message += `<b>Email:</b> <i>${this.email.value}</i>\n`;
+                message += `<b>Telegram/Skype:</b> <i>${this.telegram.value}</i>\n`;
+                message += `<b>Comments:</b> <i>${this.comments.value}</i>`;
 
-            axios.post(URI_API, {
-                chat_id: CHAT_ID,
-                parse_mode: 'html',
-                text: message
-            }).then((res) => {
-                this.name.value = '';
-                this.email.value = '';
-                this.telegram.value = '';
-                this.comments.value = '';
-            }).catch((err) => {
-                console.error(err);
+                axios.post(URI_API, {
+                    chat_id: CHAT_ID,
+                    parse_mode: 'html',
+                    text: message
+                }).then((res) => {
+                    this.name.value = '';
+                    this.email.value = '';
+                    this.telegram.value = '';
+                    this.comments.value = '';
+                }).catch((err) => {
+                    console.error(err);
+                })
             })
-        })
+        });
+        AOS.init();
     </script>
 </body>
 
