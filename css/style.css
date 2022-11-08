@@ -468,6 +468,27 @@ section {
     height: 45px;
 }
 
+.portfolio-tabs {
+  margin-bottom: 10px;
+}
+
+.portfolio-slide--left {
+  width: 50%;
+}
+
+.portfolio-slide--right {
+  width: 50%;
+}
+
+.portfolio__item--left {
+  max-width: 100%;
+}
+
+.portfolio__img {
+  margin: 20px;
+  max-width: 500px;
+}
+
 textarea {
     width: 100%;
     color: #fff;
@@ -553,6 +574,14 @@ footer p {
 }
 
 @media (max-width: 1080px) {
+  .portfolio-slide--left {
+    width: 100%;
+  }
+  
+  .portfolio-slide--right {
+    width: 100%;
+  }
+
   .navigation__list {
     display: none;
   }
