@@ -110,8 +110,8 @@ section {
 .hero__button {
     margin-top: 40px;
     padding: 25px 50px;
-    max-width: 300px;
-    font-size: 30px;
+    max-width: 400px;
+    font-size: 25px;
     font-weight: 500;
 }
 
@@ -476,10 +476,6 @@ section {
   width: 50%;
 }
 
-.portfolio-slide--right {
-  width: 50%;
-}
-
 .portfolio__item--left {
   max-width: 100%;
 }
@@ -487,6 +483,7 @@ section {
 .portfolio__img {
   margin: 20px;
   max-width: 500px;
+  max-height: 300px;
 }
 
 textarea {
@@ -578,10 +575,6 @@ footer p {
   .portfolio-slide--left {
     width: 100%;
   }
-  
-  .portfolio-slide--right {
-    width: 100%;
-  }
 
   .navigation__list {
     display: none;
@@ -614,17 +607,18 @@ footer p {
   .technology__content {
     flex-direction: column;
     position: relative;
+    box-sizing: border-box;
   }
 
   .technology__content--left {
     text-align: center;
     max-width: 100%;
     padding: 30px;
+    box-sizing: border-box;
   }
 
   .technology__content--right {
     padding: 60px 60px 20px 60px;
-    max-width: 100%;
   }
 
   .technology__item {
@@ -741,12 +735,29 @@ footer p {
   .contact__content--left, .contact__content--right {
     width: 80%;
   }
+
+  .portfolio-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 10px;
+  }
+
+  .portfolio__img {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .technology__title {
     font-size: 32px;
     padding: 0;
+  }
+
+  .stack__title {
+    margin-top: 30px;
   }
 
   .project__title {
